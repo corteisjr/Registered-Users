@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Adicione um usuário
+{% endblock title %}
+
+
+{% block content %}
+    <div class="offset-1 col-10">
+        <h1>Adicione um novo usuário</h1>
+        <form action="" method="post" class="col-md-6">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+        </form>
+       
+        <a href="{% url 'listUser' %}"><button type="submit" class="btn btn-danger mt-4">Cancelar</button></a>
+    </div>
+{% endblock content %}
+    
+    

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Dados usuário
+{% endblock title %}
+    
+
+{% block styles %}{% endblock styles %}
+    
+
+{% block content %}
+<div class="container">
+    
+    {% for user in users  %}
+    <h1 class="text-center mt-2">Dados do usuário(a) - {{user.fullName}}</h1>
+    {% endfor %}
+        
+    
+    <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nome Completo</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Endereço</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+            {% for user in users %}
+                <tr>
+                    <th>{{user.fullName}}</th>
+                    <th>{{user.cpf}}</th>
+                    <th>{{user.age}}</th>
+                    <th>{{user.address}}</th>
+                </tr>
+            {% endfor %}               
+        </tbody>
+</div>
+{% endblock content %}
+    

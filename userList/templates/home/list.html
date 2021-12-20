@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Usuários Cadastrados
+{% endblock title %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock styles %}
+    
+
+{% block content %}
+    <div class="container offset-1 col-10">
+        <div class="">
+            <h1>Lista de usuários Cadastrados</h1>
+            <a href="adduser">
+                <div class="col-6 btn btn-primary">
+                    <i class="fas fa-plus">Adicionar Usuário</i>
+                </div>
+            </a>
+        </div>
+        
+         {% if messages %}
+        <ul class="messages mt-4 ">
+            {% for message in messages%}
+                <li {% if message.tags %} class="alert alert-{{message.tags}}" {% endif%}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+            
+        <br>
+        <!-- Listagem de usuarios -->
+        {% for user in users %}
+            <ul class="list-group list-user">
+                <a href="/users/{{user.id}}" ><li class="list-group-item ">{{user.fullName}} <i class="fas fa-user"></i></li></a>
+            </ul>
+        {% endfor %}
+            
+    </div>
+{% endblock content %}
+
+
+    
+    

@@ -1,0 +1,44 @@
+/* Geral */
+
+*  {
+    margin:0;
+    padding:0;
+}
+
+html, body {height:100%;}
+
+
+ul, li {
+    list-style: none;
+}
+
+/* nav */
+.menu {
+    width: 100%;
+    background-color: #1A1C27 !important;
+}
+
+.logo {
+    color: #fff !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    color: #fff;
+    background-color: #1A1C27;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin-top: 15px;
+}
