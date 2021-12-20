@@ -4,7 +4,7 @@
 
 ## Acceptance criteria
 
-- A webpage, following the low-fidelity prototype presented in **Resources**
+-Criteria
   - Table with data of "registered" users
   - Button to open the user registration form
 - User registration form
