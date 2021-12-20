@@ -1,11 +1,24 @@
 # Registered-Users
 
+[![Home.png](https://i.postimg.cc/Kz8dNVmw/Home.png)](https://postimg.cc/McgPZ9Mm)
+
+## Acceptance criteria
+
+- A webpage, following the low-fidelity prototype presented in **Resources**
+  - Table with data of "registered" users
+  - Button to open the user registration form
+- User registration form
+  - Form with the user information fields mentioned above
+  - "Save" button to display the "Save successfully" dialog message.
+  - "Cancel" button to return to user list
+
 ## Instalation
 
 - First clone this repository and Install Packages
 
 ```
 git clone https://github.com/corteisjr/Registered-Users.git
+cd Registered-Users
 pip install -r requirements.txt
 ```
 
@@ -18,11 +31,8 @@ source venv/bin/activate
 - How To Setup on Windows
 
 ```
-git clone https://github.com/corteisjr/Registered-Users.git
-cd Registered-Users
 python -m venv venv
 venv/Scripts/activate
-pip install -r requirements.txt
 ```
 
 - Migrate and start Server
