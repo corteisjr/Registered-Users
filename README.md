@@ -4,7 +4,7 @@
 [![Home.png](https://i.postimg.cc/Kz8dNVmw/Home.png)](https://postimg.cc/McgPZ9Mm)
 
 -Registration Form
-[![forms-Registration.png](https://i.postimg.cc/BbG7zV3J/forms-Registration.png)](https://postimg.cc/WFX7FSty)
+[![forms-Registration.png](https://i.postimg.cc/DwKfg2HN/forms-Registration.png)](https://postimg.cc/XpQ0N0VK)
 
 
 ## Acceptance criteria
