@@ -12,6 +12,8 @@ ul, li {
     list-style: none;
 }
 
+
+
 /* nav */
 .menu {
     width: 100%;
@@ -38,6 +40,7 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
 
 footer p {
     margin-top: 15px;

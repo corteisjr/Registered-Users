@@ -4,6 +4,10 @@ ul li {
     list-style: none;
 }
 
+.navigation {
+    margin: 0 auto;
+}
+
 ul a li:hover{
     background-color: #0c6efd;
     width: 100%;

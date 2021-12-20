@@ -1,7 +1,9 @@
+from django.core import paginator
 from django.shortcuts import get_object_or_404, redirect, render
 from .models import FullUser
 from .forms import UserForm
 from django.contrib import messages
+from django.core.paginator import Paginator
 
 # Lista de usuários
 def listUser_view(request):
@@ -21,6 +23,8 @@ def listUser_view(request):
         users = users.filter(age__id=cpf)
     if address is not None:
         users = users.filter(address__id=address)
+        
+    
         
     context = {
         'users': users
@@ -51,7 +55,9 @@ def addUser_view(request):
 
 def userView(request, id):
     users = FullUser.objects.filter(id=id)
+        
+    
     context = {
-        'users': users
+        'users': users,
     }
     return render(request, template_name='home/users.html', context=context, status=200)

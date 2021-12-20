@@ -10,8 +10,9 @@
     
 
 {% block content %}
+
 <div class="container">
-    
+            
     {% for user in users  %}
     <h1 class="text-center mt-2">Dados do usuário(a) - {{user.fullName}}</h1>
     {% endfor %}
