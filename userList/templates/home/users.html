@@ -14,17 +14,17 @@
 <div class="container">
             
     {% for user in users  %}
-    <h1 class="text-center mt-2">Dados do usuário(a) - {{user.fullName}}</h1>
+    <h1 class="subtitulo">User data - {{user.fullName}}</h1>
     {% endfor %}
         
     
     <table class="table table-bordered table-dark">
         <thead>
           <tr>
-            <th scope="col">Nome Completo</th>
+            <th scope="col">Full name</th>
             <th scope="col">CPF</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Endereço</th>
+            <th scope="col">Age</th>
+            <th scope="col">Address</th>
           </tr>
         </thead>
         <tbody>

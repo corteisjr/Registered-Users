@@ -12,7 +12,26 @@ ul, li {
     list-style: none;
 }
 
+/* Subtitulo */
+.subtitulo {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: .1em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
 
+.subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto;
+}
 
 /* nav */
 .menu {
@@ -37,8 +56,6 @@ footer {
     color: #fff;
     background-color: #1A1C27;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
 }
 
 

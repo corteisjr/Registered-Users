@@ -7,14 +7,15 @@
 
 {% block content %}
     <div class="offset-1 col-10">
-        <h1>Adicione um novo usuário</h1>
-        <form action="" method="post" class="col-md-6">
+        <h1 class="subtitulo">Add new user</h1>
+        <form action="" method="post" class="col-md-6 ">
             {% csrf_token %}
             {{form.as_p}}
-            <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+            <div >
+                 <button type="submit" class="btn btn-primary mt-2">Save</button>
+                <a href="{% url 'listUser' %}" class="btn btn-danger mt-2">Cancel</a>
+            </div>
         </form>
-       
-        <a href="{% url 'listUser' %}"><button type="submit" class="btn btn-danger mt-4">Cancelar</button></a>
     </div>
 {% endblock content %}
     
