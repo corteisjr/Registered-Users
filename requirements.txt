@@ -1,5 +1,7 @@
 asgiref==3.4.1
 Django==3.2
 django-cpf-cnpj==1.0.0
+gunicorn==20.1.0
 pytz==2021.3
 sqlparse==0.4.2
+whitenoise==5.3.0
